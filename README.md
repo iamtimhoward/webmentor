@@ -1,4 +1,4 @@
-# webmentor created @ 2014 UM Hackathon
+# Webmentor created @ 2014 UM Hackathon
 
 Webmentor version 1.0 
 
