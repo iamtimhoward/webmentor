@@ -5,15 +5,14 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<%= link_to "Home", root_path %>
-<%= link_to "Mentor", mentor_path %>
-<%= link_to "Online Resources", online_resources_path %>
-<%= link_to "Library", library_path %>
-<%= link_to "Dev Schools", dev_schools_path %>
-<%= link_to "Recommended Blogs", rblogs_path %>
+
+<%= render 'layouts/header' %>
+<div class="container">
 <%= yield %>
+</div>
 
 </body>
 </html>
