@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-default" role="navigation">
+<nav class="navbar navbar-static-top navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="container">
     <div class="navbar-header">
@@ -15,11 +15,16 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Mentor", mentor_path %></li> 
-        <li><%= link_to "Online Resources", online_resources_path %></li>
-        <li><%= link_to "Library", library_path %></li>
-        <li><%= link_to "Dev Schools", dev_schools_path %></li>
-        <li><%= link_to "Recommended Blogs", rblogs_path %></li>
+         <% if user_signed_in? %>
+         <li><%= link_to "Mentor", mentor_path %></li> 
+         <li><%= link_to "Online Resources", online_resources_path %></li>
+         <li><%= link_to "Library", library_path %></li>
+         <li><%= link_to "Dev Schools", dev_schools_path %></li>
+         <li><%= link_to "Recommended Blogs", rblogs_path %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->

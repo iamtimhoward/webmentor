@@ -1,4 +1,5 @@
 Webmentor::Application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "mentor" => "pages#mentor"
   get "online_resources" => "pages#online_resources"
