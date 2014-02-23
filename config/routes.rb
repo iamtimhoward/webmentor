@@ -1,10 +1,10 @@
 Webmentor::Application.routes.draw do
-  get "pages/mentor"
-  get "pages/online_resources"
-  get "pages/library"
-  get "pages/dev_schools"
-  get "pages/recommended_blogs"
-  get "pages/home"
+  root "pages#home"
+  get "mentor" => "pages#mentor"
+  get "online_resources" => "pages#online_resources"
+  get "library" => "pages#library"
+  get "dev_schools" => "pages#dev_schools"
+  get "rblogs" => "pages#recommended_blogs"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

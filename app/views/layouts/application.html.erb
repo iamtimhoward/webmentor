@@ -7,7 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= link_to "Home", root_path %>
+<%= link_to "Mentor", mentor_path %>
+<%= link_to "Online Resources", online_resources_path %>
+<%= link_to "Library", library_path %>
+<%= link_to "Dev Schools", dev_schools_path %>
+<%= link_to "Recommended Blogs", rblogs_path %>
 <%= yield %>
 
 </body>
