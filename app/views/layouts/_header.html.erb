@@ -8,22 +8,23 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Webmentor</a>
+      <%= link_to "Webmentor", root_path, class: "navbar-brand"  %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
          <% if user_signed_in? %>
+         <li><%= link_to "Home", main_page_path %></li>
          <li><%= link_to "Mentor", mentor_path %></li> 
          <li><%= link_to "Online Resources", online_resources_path %></li>
          <li><%= link_to "Library", library_path %></li>
          <li><%= link_to "Dev Schools", dev_schools_path %></li>
          <li><%= link_to "Recommended Blogs", rblogs_path %></li>
+         <li><%= link_to "Account Settings", edit_user_registration_path %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>
-          <li><%= link_to "Sign in", new_user_session_path %></li>
+          <li><%= link_to "Sign In", new_user_session_path %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->

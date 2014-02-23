@@ -16,4 +16,8 @@ class PagesController < ApplicationController
 
   def recommended_blogs
   end
+
+  def main_page
+  end
+
 end

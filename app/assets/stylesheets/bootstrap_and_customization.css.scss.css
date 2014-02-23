@@ -1,14 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 $body-bg:                                                   #ecf0f1;
-$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif:                 'Pacifico', cursive,'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                                        45px;
 $navbar-default-bg:                          white;
 $navbar-default-brand-color:      #c0392b;
 $brand-primary:                                    #c0392b;
-$jumbotron-bg:                                         white;
+$jumbotron-bg:                                         white; 
 
 @import 'bootstrap';
+
+.img-rounded {
+}
 
 .center {
      text-align: center;
@@ -16,4 +19,20 @@ $jumbotron-bg:                                         white;
 
 .navbar-brand {
      font-weight: bold;
+     font-size: 35px;
+     text-shadow: 0 5px rgba(0,0,0,0.1);
+     font-family: 'Helvetica Neue',Helvetica, Arial, sans-serif;
+}
+
+.nav li {
+font-size: 18px;
+}
+
+.jumbotron h1 {
+font-size: 40px;
+font-family: 'Oswald','Helvetica Neue',Helvetica, Arial, sans-serif;
+}
+
+.accordion-group a {
+font-size: 49px;	
 }
